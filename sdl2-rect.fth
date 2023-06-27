@@ -1,7 +1,6 @@
 \ Copyright (C) 2023 Robert Coffey
 \ Released under the MIT license.
 
-c-library sdl2-rect
 \c #include <SDL2/SDL_rect.h>
 
 : SDL-point ( -- )   create [ 2 cells ] literal allot ;
@@ -22,5 +21,3 @@ c-function c-SDL_IntersectRect SDL_IntersectRect a a a -- n
 c-function c-SDL_UnionRect SDL_UnionRect a a a -- void
 c-function c-SDL_EnclosePoints SDL_EnclosePoints a n a a -- n
 c-function c-SDL_IntersectRectAndLine SDL_IntersectRectAndLine a a a a a -- n
-
-end-c-library

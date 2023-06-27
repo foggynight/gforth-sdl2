@@ -1,7 +1,6 @@
 \ Copyright (C) 2023 Robert Coffey
 \ Released under the MIT license.
 
-c-library sdl2-video
 \c #include <SDL2/SDL_video.h>
 
 0x00000001 constant SDL_WINDOW_FULLSCREEN
@@ -37,5 +36,3 @@ c-function c-SDL_DestroyWindow SDL_DestroyWindow a -- void
 
 c-function c-SDL_GetWindowSurface SDL_GetWindowSurface a -- a
 c-function c-SDL_UpdateWindowSurface SDL_UpdateWindowSurface a -- n
-
-end-c-library
