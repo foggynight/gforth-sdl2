@@ -1,6 +1,7 @@
 \ Copyright (C) 2023 Robert Coffey
 \ Released under the MIT license.
 
+c-library sdl2
 s" SDL2" add-lib
 \c #include <SDL2/SDL.h>
 
@@ -24,3 +25,5 @@ c-function c-SDL_Quit    SDL_Quit    -- void
 
 c-function c-SDL_InitSubSystem SDL_InitSubSystem n -- n
 c-function c-SDL_QuitSubSystem SDL_QuitSubSystem n -- void
+
+end-c-library

@@ -1,6 +1,7 @@
 \ Copyright (C) 2023 Robert Coffey
 \ Released under the MIT license.
 
+c-library sdl2-video
 \c #include <SDL2/SDL_video.h>
 
 0x00000001 constant SDL_WINDOW_FULLSCREEN
@@ -31,5 +32,10 @@ SDL_WINDOW_MOUSE_GRABBED constant SDL_WINDOW_INPUT_GRABBED
 
 0x1FFF0000 constant SDL_WINDOWPOS_UNDEFINED
 
-c-function c-SDL_CreateWindow  SDL_CreateWindow  a n n n n n -- a
+c-function c-SDL_CreateWindow SDL_CreateWindow a n n n n n -- a
 c-function c-SDL_DestroyWindow SDL_DestroyWindow a -- void
+
+c-function c-SDL_GetWindowSurface SDL_GetWindowSurface a -- a
+c-function c-SDL_UpdateWindowSurface SDL_UpdateWindowSurface a -- n
+
+end-c-library
