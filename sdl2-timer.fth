@@ -3,4 +3,4 @@
 
 \c #include <SDL2/SDL_timer.h>
 
-c-function c-SDL_Delay SDL_Delay n -- void
+c-function SDL_Delay SDL_Delay n -- void

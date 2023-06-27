@@ -3,4 +3,4 @@
 
 \c #include <SDL2/SDL_surface.h>
 
-c-function c-SDL_FillRect SDL_FillRect a a n -- n
+c-function SDL_FillRect SDL_FillRect a a n -- n

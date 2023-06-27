@@ -31,8 +31,8 @@ SDL_WINDOW_MOUSE_GRABBED constant SDL_WINDOW_INPUT_GRABBED
 
 0x1FFF0000 constant SDL_WINDOWPOS_UNDEFINED
 
-c-function c-SDL_CreateWindow SDL_CreateWindow a n n n n n -- a
-c-function c-SDL_DestroyWindow SDL_DestroyWindow a -- void
+c-function SDL_CreateWindow SDL_CreateWindow a n n n n n -- a
+c-function SDL_DestroyWindow SDL_DestroyWindow a -- void
 
-c-function c-SDL_GetWindowSurface SDL_GetWindowSurface a -- a
-c-function c-SDL_UpdateWindowSurface SDL_UpdateWindowSurface a -- n
+c-function SDL_GetWindowSurface SDL_GetWindowSurface a -- a
+c-function SDL_UpdateWindowSurface SDL_UpdateWindowSurface a -- n

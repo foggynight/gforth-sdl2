@@ -18,9 +18,9 @@ SDL_INIT_TIMER SDL_INIT_AUDIO SDL_INIT_VIDEO SDL_INIT_EVENTS
   or or or or or or or
 constant SDL_INIT_EVERYTHING
 
-c-function c-SDL_Init    SDL_Init    n -- n
-c-function c-SDL_WasInit SDL_WasInit n -- n
-c-function c-SDL_Quit    SDL_Quit    -- void
+c-function SDL_Init    SDL_Init    n -- n
+c-function SDL_WasInit SDL_WasInit n -- n
+c-function SDL_Quit    SDL_Quit    -- void
 
-c-function c-SDL_InitSubSystem SDL_InitSubSystem n -- n
-c-function c-SDL_QuitSubSystem SDL_QuitSubSystem n -- void
+c-function SDL_InitSubSystem SDL_InitSubSystem n -- n
+c-function SDL_QuitSubSystem SDL_QuitSubSystem n -- void

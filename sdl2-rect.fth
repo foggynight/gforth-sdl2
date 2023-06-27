@@ -13,11 +13,11 @@
 : SDL-rect-w ( x -- x' )   [ 2 cells ] literal + ;
 : SDL-rect-h ( x -- x' )   [ 3 cells ] literal + ;
 
-c-function c-SDL_PointInRect SDL_PointInRect a a -- n
-c-function c-SDL_RectEmpty SDL_RectEmpty a -- n
-c-function c-SDL_RectEquals SDL_RectEquals a a -- n
-c-function c-SDL_HasIntersection SDL_HasIntersection a a -- n
-c-function c-SDL_IntersectRect SDL_IntersectRect a a a -- n
-c-function c-SDL_UnionRect SDL_UnionRect a a a -- void
-c-function c-SDL_EnclosePoints SDL_EnclosePoints a n a a -- n
-c-function c-SDL_IntersectRectAndLine SDL_IntersectRectAndLine a a a a a -- n
+c-function SDL_PointInRect SDL_PointInRect a a -- n
+c-function SDL_RectEmpty SDL_RectEmpty a -- n
+c-function SDL_RectEquals SDL_RectEquals a a -- n
+c-function SDL_HasIntersection SDL_HasIntersection a a -- n
+c-function SDL_IntersectRect SDL_IntersectRect a a a -- n
+c-function SDL_UnionRect SDL_UnionRect a a a -- void
+c-function SDL_EnclosePoints SDL_EnclosePoints a n a a -- n
+c-function SDL_IntersectRectAndLine SDL_IntersectRectAndLine a a a a a -- n
