@@ -11,7 +11,7 @@ variable render
 
 : init-sdl2   SDL_INIT_VIDEO SDL_Init drop ;
 : init-window
-  c" Hello, World."
+  s\" Hello, World.\0" drop
   SDL_WINDOWPOS_UNDEFINED SDL_WINDOWPOS_UNDEFINED
   WINDOW_W WINDOW_H SDL_WINDOW_SHOWN
   SDL_CreateWindow window ! ;
