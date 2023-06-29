@@ -1,7 +1,7 @@
-include sdl2.fth
-include sdl2-render.fth
-include sdl2-timer.fth
-include sdl2-video.fth
+include SDL.fth
+include SDL_render.fth
+include SDL_timer.fth
+include SDL_video.fth
 
 640 constant WINDOW_W
 480 constant WINDOW_H

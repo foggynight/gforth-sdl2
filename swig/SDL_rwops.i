@@ -1,0 +1,12 @@
+%module sdl_rwops
+%insert("include")
+%{
+#include <SDL2/SDL_rwops.h>
+%}
+
+#define SWIG_FORTH_GFORTH_LIBRARY "SDL2"
+#define SWIG_FORTH_OPTIONS "no-callbacks"
+
+%include <SDL2/begin_code.h>
+%include <SDL2/SDL_rwops.h>
+%include <SDL2/close_code.h>

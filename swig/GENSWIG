@@ -1,0 +1,11 @@
+# genswig - Generate SWIG interface files.
+
+SDL2_PATH=/usr/include/SDL2
+
+for h in "$SDL2_PATH"/SDL*.h; do
+    NAME=$(basename -s '.h' "$h")
+    MODN=$(printf "$NAME" | sed 'y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/')
+    cp MASTER.i "$NAME".i
+    sed -i "s/MODULE/$MODN/g" "$NAME".i
+    sed -i "s/HEADER/$NAME/g" "$NAME".i
+done

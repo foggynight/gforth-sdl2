@@ -1,0 +1,36 @@
+\ This file has been generated using SWIG and fsi,
+\ and is already platform dependent, search for the corresponding
+\ fsi-file to compile it where no one has compiled it before ;)
+\ Forth systems have their own own dynamic loader and don't need addional C-Code.
+\ That's why this file will just print normal forth-code once compiled
+\ and can be used directly with include or require.
+\ As all comments are stripped during the compilation, please
+\ insert the copyright notice of the original file here.
+
+\ ----===< prefix >===-----
+c-library sdl_test_images
+s" SDL2" add-lib
+\c #include <SDL2/SDL_test_images.h>
+
+\ ----===< int constants >===-----
+
+\ -------===< structs >===--------
+\ struct SDLTest_SurfaceImage_s
+begin-structure SDLTest_SurfaceImage_t
+drop 24 end-structure
+
+\ ------===< functions >===-------
+c-function SDLTest_ImageBlit SDLTest_ImageBlit  -- a	( -- )
+c-function SDLTest_ImageBlitColor SDLTest_ImageBlitColor  -- a	( -- )
+c-function SDLTest_ImageBlitAlpha SDLTest_ImageBlitAlpha  -- a	( -- )
+c-function SDLTest_ImageBlitBlendAdd SDLTest_ImageBlitBlendAdd  -- a	( -- )
+c-function SDLTest_ImageBlitBlend SDLTest_ImageBlitBlend  -- a	( -- )
+c-function SDLTest_ImageBlitBlendMod SDLTest_ImageBlitBlendMod  -- a	( -- )
+c-function SDLTest_ImageBlitBlendNone SDLTest_ImageBlitBlendNone  -- a	( -- )
+c-function SDLTest_ImageBlitBlendAll SDLTest_ImageBlitBlendAll  -- a	( -- )
+c-function SDLTest_ImageFace SDLTest_ImageFace  -- a	( -- )
+c-function SDLTest_ImagePrimitives SDLTest_ImagePrimitives  -- a	( -- )
+c-function SDLTest_ImagePrimitivesBlend SDLTest_ImagePrimitivesBlend  -- a	( -- )
+
+\ ----===< postfix >===-----
+end-c-library
