@@ -1,7 +1,9 @@
-include SDL.fth
-include SDL_render.fth
-include SDL_timer.fth
-include SDL_video.fth
+table >order definitions
+require SDL.fth
+require SDL_render.fth
+require SDL_timer.fth
+require SDL_video.fth
+wordlist >order definitions
 
 640 constant WINDOW_W
 480 constant WINDOW_H
